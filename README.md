@@ -1,6 +1,6 @@
 # 📦 xray-docker-alpine
 
-Минималистичный Docker-образ для **Xray-core** на базе **Alpine Linux**.
+Минималистичный Docker-образ для [**Xray-core**](https://github.com/XTLS/Xray-core) на базе **Alpine Linux**.
 
 ## Особенности
 
@@ -42,3 +42,8 @@ services:
 ## Лицензия
 
 [MIT](./LICENSE)
+
+## Ссылки
+
+- [Официальный репозиторий Xray-core (XTLS)](https://github.com/XTLS/Xray-core)
+- [Документация Xray](https://xtls.github.io/)
