@@ -12,8 +12,8 @@ RUN unzip /tmp/xray.zip -d /usr/local/bin && \
     rm /tmp/xray.zip && \
     chmod +x /usr/local/bin/xray
 
-# Копируем конфигурацию
-COPY config.json /etc/xray/config.json
+# Создаём директорию для конфига (сам конфиг монтируется через volume)
+RUN mkdir -p /etc/xray
 
 # Xray работает по умолчанию от непривилегированного пользователя, но в контейнере лучше не переключать
 # Если хотите, создайте пользователя xray, но это опционально.
